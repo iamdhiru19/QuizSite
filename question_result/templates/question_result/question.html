@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Quiz Site | {{name}}</title>
+</head>
+
+<body>
+    <h1>{{name}}</h1>
+
+    <form action="/action_page.php">
+        {% for prob in problems %}
+            <h3>Question-{{forloop.counter}}: {{prob.question}}</h3>
+            <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+            <label>{{prob.A}}</label><br>
+            <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+            <label>{{prob.B}}</label><br>
+            <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+            <label>{{prob.A}}</label><br>
+            <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+            <label>{{prob.B}}</label><br>
+        {% endfor %} 
+    </form>
+    
+   
+</body>
+
+</html>
